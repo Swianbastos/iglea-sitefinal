@@ -7,12 +7,4 @@
 
 body{
     background-color: var(--cor-de-fundo);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.conteiner {
-    display: flex;
-    align-items: center;
 }
