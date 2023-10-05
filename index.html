@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -50,6 +53,42 @@
         <p class="banner__texto">Encontre em nosso site receitas para facilitar o seu dia a dia</p>
         <imput type="search" class="banner__pesquisa" placeholder="Qual será a sua próxima receita?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo"> Receitas</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/Salgado.jpg" alt="Salgados"></div>
+      <div class="swiper-slide"><img src="img/Doces.jpg" alt="Doces"></div>
+      <div class="swiper-slide"><img src="img/molhos2.png" alt="Molhos"></div>
+      <div class="swiper-slide"><img src="img/bebidas.webp" alt="Bebidas"></div>
+      <div class="swiper-slide"><img src="img/pizzas.webp" alt="Pizzas"></div>
+      <div class="swiper-slide"><img src="Guia Front-end.svg" alt=""></div>
+
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 5,
+        });
+    </script>
 </body>
 
 </html>
